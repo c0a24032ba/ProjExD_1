@@ -38,7 +38,7 @@ def main():
         # screen.blit(kk_img, [300, 200])Add commentMore actions
         screen.blit(kk_img, kk_rct)
         pg.display.update()
-        # print(tmr, x)gi
+        # print(tmr, x)
         tmr += 1        
         clock.tick(200)
 
