@@ -28,7 +28,7 @@ def main():
         if key_lst[pg.K_LEFT]:
             mv[0] -= 1
         if key_lst[pg.K_RIGHT]:
-            mv[0] += 1
+            mv[0] += 2
         kk_rct.move_ip(mv)
 
         x = tmr%3200
