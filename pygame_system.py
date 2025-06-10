@@ -10,11 +10,11 @@ def main():
     screen = pg.display.set_mode((800, 600))
     clock = pg.time.Clock()
     font = pg.font.Font(None, 80)
-
+    
     enn = pg.Surface((20, 20))
     pg.draw.circle(enn, (255, 0, 0), (10, 10), 10)
     enn.set_colorkey((0, 0, 0))
-
+    
     tmr = 0
     while True:
         for event in pg.event.get():
@@ -25,7 +25,8 @@ def main():
         screen.blit(txt, [300, 200])
         screen.blit(enn, [100, 400])
         pg.display.update()
-        tmr += 1        
+        tmr += 1  
+        clock.tick(1)      
         clock.tick(1)
 
 
